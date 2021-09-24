@@ -35,7 +35,7 @@
              background-color:rgba(0, 0, 0, 0.267) ;
          }
         .Skills  {
-            background-color: rgba(2, 2, 2, 0.726);
+            background-color: rgba(2, 2, 2, 0.849);
          }
          /*screens*/
          @media screen and (min-width:650px){
@@ -88,7 +88,7 @@
                       
                            
                         </div >
-                        <div1 style="color:rgb(0, 0, 0); font-family: 'Courier New', Courier, monospace; font-weight: 20em; font-style: italic; text-align: center;">
+                        <div1 style="color:rgb(149, 64, 247); font-family: 'Courier New', Courier, monospace; font-weight: 20em; font-style: italic; text-align: center;">
                             <h1> Skills</h1>
                             <h3>Good at Mitsubishi PLC programming +HMI</h3>
                             <h3>Medium at Siemens PLC programming +HMI</h3>
@@ -96,7 +96,25 @@
                             <h3>Good at Microsoft Word+Excel+powerpoint</h3>   
                             </div1>
                 </h5>
-        </div>
+            </div>
+
+            <div style="text-align:center;">
+            <script>
+                document.addEventListener('DOMContentLoaded',() => {
+                    document.querySelectorAll('button').forEach((button) =>{
+                        button.onclick = () =>{
+                            document.querySelector('div1').style.color = button.dataset.color;
+                          
+                        }
+                    });
+                });
+            </script>
+                    <h1></h1>
+                    <button data-color="red">RED</button>
+                    <button data-color="green">GREEN</button>
+                    <button data-color="blue">BLUE</button>
+            </div>
+
         </body>
 </html>
 
